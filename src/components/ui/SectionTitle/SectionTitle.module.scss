@@ -1,0 +1,8 @@
+.title {
+    font-size: clamp(1.375rem, 0.996rem + 1.62vw, 2.25rem);
+    font-weight: 400;
+    letter-spacing: -0.7px;
+
+    font-family: var(--font-accent);
+    color: var(--text-color);
+}

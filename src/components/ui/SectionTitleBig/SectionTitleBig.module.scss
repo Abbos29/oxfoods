@@ -1,0 +1,8 @@
+.title {
+    font-family: "NEXT ART", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+
+    font-size: clamp(1.5rem, 1.007rem + 2.11vw, 2.625rem);
+    color: var(--text-color);
+}
