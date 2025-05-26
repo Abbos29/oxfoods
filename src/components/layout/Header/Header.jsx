@@ -23,16 +23,16 @@ const Header = () => {
                     <div className={s.navbarInner}>
                         <div className={s.logo}>
                             <Link href="/">
-                                <Image src="/img/logo.svg" alt="logo" width={40} height={40} />
+                                <Image className='logo' src="/img/logo.svg" alt="logo" width={40} height={40} />
                             </Link>
                             <span>Для стройки и ремонта</span>
                         </div>
 
-                        <div className={s.menu}>
+                        <div className={`${s.menu} ${burgerActive ? s.active : ''}`}>
                             <Link href="/about" className={s.link}>О нас</Link>
                             <Link href="/collab" className={s.link}>Сотрудничество</Link>
 
-                            <Dropdown mainLabel="Каталог" mainHref="/catalog">
+                            <Dropdown className={s.dropdown} mainLabel="Каталог" mainHref="/catalog">
                                 <Link href="/#slider1">Лазерные уровни</Link>
                                 <Link href="/#slider2">Присоски</Link>
                                 <Link href="/#slider3">Разметочный инструмент</Link>

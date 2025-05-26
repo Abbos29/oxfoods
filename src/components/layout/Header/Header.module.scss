@@ -79,24 +79,34 @@
             animation: fade 0.1s linear;
             padding-top: 140px;
 
-            .menu__item {
+            a {
                 width: 100%;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            }
-
-            .menu__item-link {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                border-bottom: 1px solid var(--border-color);
                 display: block;
                 padding-left: 24px;
                 padding-bottom: 20px;
                 padding-top: 20px;
                 font-size: 20px;
             }
+
+            .dropdown {
+                width: 100%;
+                > div {
+                    display: none;
+                }
+
+                > a {
+                    display: block;
+                    width: 100%;
+                }
+            }
         }
     }
 
     @media screen and (max-width: 1150px) {
         position: fixed;
-        background: #0a090f;
+        background: var(--bg-secondary);
         left: 0;
         top: 0;
         height: 100vh;
@@ -253,5 +263,43 @@
     a {
         color: var(--text-color);
         font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
