@@ -1,12 +1,12 @@
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.13);
-    background: rgba(13, 11, 19, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(13, 11, 19, 0.3);
+    backdrop-filter: blur(20px) ;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 999;
 
     a {
         text-decoration: none;
@@ -72,7 +72,7 @@
             width: 100vw;
             flex-direction: column;
             pointer-events: all;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: flex-start;
             z-index: 22;
             gap: 0;
@@ -161,7 +161,7 @@
 
     .footer__inner {
         padding-top: 0px;
-        align-items: start;
+        align-items: flex-start;
     }
 
     @media (max-width: 1150px) {

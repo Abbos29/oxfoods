@@ -23,7 +23,7 @@ const Header = () => {
                     <div className={s.navbarInner}>
                         <div className={s.logo}>
                             <Link href="/">
-                                <Image className='logo' src="/img/logo.svg" alt="logo" width={40} height={40} />
+                                <Image className='logo' src="/img/logo-main.svg" alt="logo" width={40} height={40} />
                             </Link>
                             <span>Для стройки и ремонта</span>
                         </div>

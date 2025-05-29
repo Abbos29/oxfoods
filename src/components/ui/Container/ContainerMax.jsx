@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Container.module.scss'
 
-const ContainerMax = () => {
+const ContainerMax = ({children}) => {
     return (
         <>
             <div className={s.containerMax}>

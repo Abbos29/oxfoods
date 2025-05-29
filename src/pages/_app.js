@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer/Footer";
 import Header from "@/components/layout/Header/Header";
 import ThemeToggle from "@/components/ui/ThemeToggle/ThemeToggle";
 import "@/styles/globals.scss";
@@ -11,8 +12,9 @@ export default function App({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      <ThemeToggle />
-
+      <Footer />
+      
+      {/* <ThemeToggle /> */}
     </ThemeProvider>
   )
 }
