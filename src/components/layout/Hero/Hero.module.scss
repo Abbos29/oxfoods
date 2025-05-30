@@ -88,6 +88,10 @@
         gap: 28px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(2px);
+
+        @media (max-width: 480px) {
+            width: auto;
+        }
     }
 
     &__listItem {

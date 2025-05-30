@@ -16,20 +16,24 @@ const Header = () => {
         setBurgerActive(prev => !prev);
     };
 
+    const closeMenu = () => {
+        setBurgerActive(false)
+    }
+
     return (
         <header className={s.header}>
             <nav className={s.navbar}>
                 <Container>
                     <div className={s.navbarInner}>
                         <div className={s.logo}>
-                            <Link href="/">
+                            <Link href="/" onClick={closeMenu}>
                                 <Image className='logo' src="/img/logo-main.svg" alt="logo" width={40} height={40} />
                             </Link>
                             <span>Для стройки и ремонта</span>
                         </div>
 
                         <div className={`${s.menu} ${burgerActive ? s.active : ''}`}>
-                            <Link href="/about" className={s.link}>О нас</Link>
+                            <Link onClick={closeMenu} href="/about" className={s.link}>О нас</Link>
                             <Link href="/collab" className={s.link}>Сотрудничество</Link>
 
                             <Dropdown className={s.dropdown} mainLabel="Каталог" mainHref="/catalog">
@@ -39,10 +43,14 @@ const Header = () => {
                                 <Link href="/#slider4">Штативы и штанги</Link>
                                 <Link href="/#slider5">Строительные фены</Link>
                             </Dropdown>
+
+                            <div className={s.menuSoc}>
+                                <a href="tel:+998933770060" className={s.link}>+998 93 377-00-60</a>
+                            </div>
                         </div>
 
                         <div className={s.menuSoc}>
-                            <a href="tel:+79125334018" className={s.link}>+7(912)533-40-18</a>
+                            <a href="tel:+998933770060" className={s.link}>+998 93 377-00-60</a>
                         </div>
 
                         <div className={s.socials}>

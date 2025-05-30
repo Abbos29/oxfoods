@@ -1,0 +1,50 @@
+.videoWrap {
+    padding-bottom: 100px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 550px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.title {
+    font-size: clamp(1.375rem, 1.068rem + 1.26vw, 2.25rem);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: var(--font-accent);
+    margin-bottom: 30px;
+
+}
+
+.video {
+    background-color: #151524;
+    width: 100%;
+
+    iframe {
+        width: 100%;
+        height: 250px;
+
+        @media (max-width: 750px) {
+            height: 200px;
+        }
+
+        @media (max-width: 550px) {
+            height: 300px;
+        }
+    }
+
+    p {
+        padding: 20px;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+}

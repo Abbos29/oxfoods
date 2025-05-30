@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className={s.footer__wrapper}>
                     <div className={`${s.footer__item} ${s.firstItem}`}>
                         <p className={`${s.footer__itemLink} ${s.bold}`}>Контакты</p>
-                        <a href="tel:+79125334018" className={s.footer__itemLink}>+7 (912) 533-40-18</a>
+                        <a href="tel:+998933770060" className={s.footer__itemLink}>+998 93 377-00-60</a>
                         <a href="mailto:office@fukudamarket.ru" className={s.footer__itemLink}>office@fukudamarket.ru</a>
                         <a
                             href="https://maps.app.goo.gl/9gkHazVLsH2CkpyHA"

@@ -10,6 +10,23 @@
         filter 0.2s;
 }
 
+#__next {
+    min-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    footer {
+        margin-top: auto;
+    }
+
+    section {
+        &:first-of-type {
+            padding-top: 150px;
+        }
+    }
+}
+
 html {
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
