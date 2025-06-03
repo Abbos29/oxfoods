@@ -1,0 +1,159 @@
+.beard {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+
+.beardWrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 180px;
+
+    a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 40px;
+    }
+}
+
+.beardBack {
+    display: block;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(228, 210, 58, 0.7);
+    opacity: 0.4;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.beardMenu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.beardItem {
+    a {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &.active a {
+        color: #fff;
+    }
+}
+
+.about {
+    padding: 120px 0;
+    width: 100%;
+    max-width: 100%;
+
+    @media (max-width: 480px) {
+        padding: 70px 0;
+    }
+}
+
+.aboutImg {
+    width: 60%;
+    height: 400px;
+    margin-left: auto;
+    background-image: url(/img/hero-2-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 30% 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.aboutImgMobile {
+    display: none;
+
+    @media (max-width: 480px) {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.aboutWrapper {
+    // padding-top: 30px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.aboutItem {
+    height: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(/img/hero-2-item-bg.svg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+    overflow: visible;
+
+    padding: 20px;
+
+     .aboutTitle {
+        color: var(--text-color);
+        font-family: "NEXT ART", sans-serif;
+        font-size: clamp(2.5rem, 2.012rem + 2.08vw, 3.625rem);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.7px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+        margin: 0 0 20px 0;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 40px;
+            background: rgba(228, 210, 58, 0.2);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .aboutPretitle {
+        color: var(--text-color);
+        font-family: "NEXT ART", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 480px) {
+        background-size: 100% 220px;
+        background-image: none;
+    }
+}
