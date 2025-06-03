@@ -8,8 +8,8 @@
     --text-color: #1a1a1a;
     --text-muted: #4a4a4a;
     --border-color: #d0d0d0;
+    --card-bg: #151524;
 
-    /* button */
     --btn-color: #1a1a1a;
     --btn-border-color: #1a1a1a;
     --btn-bg: #f6c744;
@@ -23,8 +23,8 @@ html.dark {
     --text-color: #ffffff;
     --text-muted: #cccccc;
     --border-color: #2a2a2a;
+    --card-bg: #151524;
 
-    /* button */
     --btn-color: #f6c744;
     --btn-border-color: #f6c744;
     --btn-bg: transparent;

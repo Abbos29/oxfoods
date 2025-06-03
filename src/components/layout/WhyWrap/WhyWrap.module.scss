@@ -1,0 +1,81 @@
+.why {
+    padding: 60px 0;
+}
+
+
+.whyWrapper {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-template-areas: "item1 item3 item4" "item2 item3 item5";
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item5;
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "item1 item2" "item3 item3" "item4 item5";
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+    }
+}
+
+.whyItem {
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--card-bg);
+    gap: 15px 15px;
+    text-align: center;
+
+    @media (max-width: 992px) {
+        padding: 25px;
+    }
+}
+
+.whyName {
+    color: var(--white-text);
+    font-family: var(--font-accent);
+    font-size: clamp(1.125rem, 0.966rem + 0.69vw, 1.5rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+.whyText {
+    color: var(--white-text-muted);
+    text-align: center;
+    font-size: clamp(0.875rem, 0.822rem + 0.23vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
