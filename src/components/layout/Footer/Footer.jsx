@@ -4,6 +4,7 @@ import Link from 'next/link'
 import s from './Footer.module.scss'
 import Container from '@/components/ui/Container/Container'
 import Button from '@/components/ui/Button/Button'
+import { FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
     return (
@@ -13,7 +14,7 @@ const Footer = () => {
                     <Link href="/" className={s.footer__logo}>
                         <Image src="/img/logo-main.svg" alt="logo" width={110} height={40} />
                     </Link>
-                    <p className={s.footer__topText}>Для стройки и ремонта</p>
+                    <p className={s.footer__topText}>Оборудование для пекарен <br /> и кондитерских</p>
                     <Link href="/catalog">
                         <Button>
                             Каталог
@@ -82,7 +83,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             Яндекс маркет
-                            <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} />
+                            {/* <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} /> */}
                         </a>
 
                         <a
@@ -92,7 +93,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             Ozon
-                            <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} />
+                            {/* <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} /> */}
                         </a>
 
                         <a
@@ -102,7 +103,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                         >
                             Wildberries
-                            <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} />
+                            {/* <Image src="/img/slider-btn-icon.svg" alt="icon" width={16} height={16} /> */}
                         </a>
 
                         <Link href="/policy" className={`${s.footer__itemLink} ${s.link} ${s.policy}`}>
@@ -112,24 +113,17 @@ const Footer = () => {
                 </div>
 
                 <div className={s.footer__inner}>
-                    <div className={s.footer__soc}>
-                        <a
-                            className={s.footer__socLink}
-                            href="https://api.whatsapp.com/send?phone=79125334018"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image src="/img/icon-twitter.svg" alt="twitter" width={22} height={22} />
-                        </a>
-                        <a
-                            className={s.footer__socLink}
-                            href="https://www.instagram.com/boom_construction_tools/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image src="/img/icon-insta.svg" alt="instagram" width={22} height={22} />
-                        </a>
-                    </div>
+                    <div className={s.socials}>
+                            <a href="https://api.whatsapp.com/send?phone=79125334018" target="_blank">
+                                <FaWhatsapp />
+                            </a>
+                            <a href="https://www.youtube.com/@fukudamarket7021" target="_blank">
+                                <FaYoutube />
+                            </a>
+                            <a href="https://www.instagram.com/boom_construction_tools/" target="_blank">
+                                <FaInstagram />
+                            </a>
+                        </div>
 
                     <p className={s.footer__copyright}>Copyright © 2025 OxFoods</p>
 

@@ -1,33 +1,35 @@
 :root {
     --font-accent: "NEXT ART", sans-serif;
     --font-main: "Manrope", sans-serif;
-    --accent-color: #f6c744;
-    --accent-color-hover: #e5b932;
-    --bg-color: #f5f5f5;
-    --bg-secondary: #eaeaea;
-    --text-color: #1a1a1a;
-    --text-muted: #4a4a4a;
-    --border-color: #d0d0d0;
-    --card-bg: #151524;
 
-    --btn-color: #1a1a1a;
-    --btn-border-color: #1a1a1a;
-    --btn-bg: #f6c744;
-    --btn-hover-bg: #1a1a1a;
-    --btn-hover-color: #f6c744;
+    --accent-color: #C46230; /* Используем основной шрифт-цвет как акцент */
+    --accent-color-hover: #a75124; /* Более тёмный оттенок акцента для наведения */
+
+    --bg-color: #F5EBDD;
+    --bg-secondary: #EFE3D4; /* Немного темнее основного фона */
+    --text-color: #000000;
+    --text-muted: #A65828; /* Приглушённый вариант основного цвета текста */
+    --border-color: #D6C5B6;
+    --card-bg: #FFFFFF;
+
+    --btn-color: #FFFFFF;
+    --btn-border-color: #C46230;
+    --btn-bg: #C46230;
+    --btn-hover-bg: #a75124;
+    --btn-hover-color: #FFFFFF;
 }
 
 html.dark {
-    --bg-color: #111111;
-    --bg-secondary: #1a1a1a;
-    --text-color: #ffffff;
-    --text-muted: #cccccc;
-    --border-color: #2a2a2a;
-    --card-bg: #151524;
+    --bg-color: #2A2A2A;
+    --bg-secondary: #1F1F1F; /* Чуть темнее фон */
+    --text-color: #F8F8F8;
+    --text-muted: #CCCCCC; /* Мягкий приглушённый белый */
+    --border-color: #444444;
+    --card-bg: #3A3A3A;
 
-    --btn-color: #f6c744;
-    --btn-border-color: #f6c744;
-    --btn-bg: transparent;
-    --btn-hover-bg: #f6c744;
-    --btn-hover-color: #000000;
+    --btn-color: #FFFFFF;
+    --btn-border-color: #1F1F1F;
+    --btn-bg: #C46230;
+    --btn-hover-bg: #a75124;
+    --btn-hover-color: #FFFFFF;
 }

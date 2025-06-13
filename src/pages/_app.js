@@ -8,13 +8,20 @@ import { ThemeProvider } from 'next-themes'
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Header />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem={true}
+        themes={['light', 'dark']}
+      >
 
-      <Component {...pageProps} />
+        <Header />
 
-      <Footer />
+        <Component {...pageProps} />
 
-      {/* <ThemeToggle /> */}
+        <Footer />
+
+      </ThemeProvider>
     </>
   )
 }

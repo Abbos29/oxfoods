@@ -20,11 +20,11 @@
         margin-top: auto;
     }
 
-    section {
-        &:first-of-type {
-            padding-top: 150px;
-        }
-    }
+    // section {
+    //     &:first-of-type {
+    //         padding-top: 150px;
+    //     }
+    // }
 }
 
 html {
@@ -68,4 +68,16 @@ body::-webkit-scrollbar-thumb {
 body {
     background-image: url(/img/noize.webp);
     background-size: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 20px !important;
+    height: 10px !important;
+    background: gray !important;
+    transition: 0.4s !important;
+    border-radius: 30px !important;
+}
+.swiper-pagination-bullet-active {
+    width: 40px !important;
+    background: var(--accent-color) !important;
 }

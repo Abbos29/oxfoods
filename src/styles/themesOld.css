@@ -1,0 +1,37 @@
+:root {
+    --font-accent: "NEXT ART", sans-serif;
+    --font-main: "Manrope", sans-serif;
+    --accent-color: #C46230;
+    /* --accent-color: #ff6700; */
+    --accent-color-hover: #A54A26;
+    /* --bg-color: #F5EBDD; */
+    --bg-color: #fffefe;
+    /* --bg-secondary: #F8F8F8; */
+    --bg-secondary: #ffffff;
+    --text-color: #2A2A2A;
+    --text-muted: #6B6B6B;
+    --border-color: #D4C4B0;
+    --card-bg: #6E8B5C;
+
+    --btn-color: #fffbf5;
+    --btn-border-color: #C46230;
+    --btn-bg: #C46230;
+    /* --btn-bg: #ff6700; */
+    --btn-hover-bg: #A54A26;
+    --btn-hover-color: #F5EBDD;
+}
+
+html.dark {
+    --bg-color: #2A2A2A;
+    --bg-secondary: #3A3A3A;
+    --text-color: #F5EBDD;
+    --text-muted: #D4C4B0;
+    --border-color: #4A4A4A;
+    --card-bg: #6E8B5C;
+
+    --btn-color: #F5EBDD;
+    --btn-border-color: #C46230;
+    --btn-bg: transparent;
+    --btn-hover-bg: #C46230;
+    --btn-hover-color: #F5EBDD;
+}
